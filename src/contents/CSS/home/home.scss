@@ -1,0 +1,59 @@
+/* Sky Section Gradient */
+.sky-gradient-section {
+  background: linear-gradient(
+    to bottom,
+    #87ceeb 0%,    /* Light sky blue */
+    #60aeea 40%,   /* Mid sky */
+    #1976d2 100%   /* Deep sky blue */
+  );
+}
+
+/* Water Section Gradient */
+.water-gradient-section {
+  background: linear-gradient(
+    to bottom,
+    #4fc3f7 0%,    /* Light water */
+    #0288d1 60%,   /* Medium blue */
+    #01579b 100%   /* Deep water */
+  );
+}
+
+.w-full{
+  width: "100%";
+};
+
+.h-1{
+  height: "50%";
+};
+
+.LightWaves {
+  animation: lightwaves 2s infinite;
+  position: relative;
+}
+
+@keyframes lightwaves {
+    0%,100% { transform: translate(0,0); }
+    25%     { transform: translate(5px,5px); transform: scale(1.05); }
+    50%     { transform: translate(25px, 5px); }
+    75%     { transform: translate(12px,10px); transform: scale(1.05); }
+}
+
+.DarkWaves {
+  animation: darkwaves 3.8s infinite;
+}
+
+@keyframes darkwaves {
+    0%,100% { transform: translate(0,0); }
+    25%     { transform: translate(25px, 5px); transform: scale(1.05); }
+    50%     { transform: translate(12px,10px); }
+    75%     { transform: translate(5px,5px); }
+}
+
+.WhiteWaves {
+  animation: whitewaves 4s alternate ease infinite;
+}
+
+@keyframes whitewaves {
+    0% { transform: translate(0,25px); }
+    100%     { transform: translate(25px,35px); }
+}

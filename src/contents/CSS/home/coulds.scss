@@ -1,0 +1,98 @@
+.cloud-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(to bottom, #b9eaf9 0%, #e0f7fa 100%);
+  overflow: hidden;
+}
+
+.cloud {
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.9;
+  animation: floatClouds 60s linear infinite;
+}
+
+.cloud::before,
+.cloud::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.cloud-1 {
+  width: 120px;
+  height: 60px;
+  top: 50px;
+  left: -150px;
+  animation-delay: 0s;
+}
+
+.cloud-1::before {
+  width: 70px;
+  height: 70px;
+  top: -20px;
+  left: 40px;
+}
+
+.cloud-1::after {
+  width: 60px;
+  height: 60px;
+  top: 0;
+  left: 80px;
+}
+
+.cloud-2 {
+  width: 180px;
+  height: 80px;
+  top: 100px;
+  left: -200px;
+  animation-delay: 10s;
+}
+
+.cloud-2::before {
+  width: 100px;
+  height: 100px;
+  top: -30px;
+  left: 50px;
+}
+
+.cloud-2::after {
+  width: 80px;
+  height: 80px;
+  top: 10px;
+  left: 110px;
+}
+
+.cloud-3 {
+  width: 150px;
+  height: 70px;
+  top: 180px;
+  left: -180px;
+  animation-delay: 20s;
+}
+
+.cloud-3::before {
+  width: 80px;
+  height: 80px;
+  top: -25px;
+  left: 40px;
+}
+
+.cloud-3::after {
+  width: 70px;
+  height: 70px;
+  top: 5px;
+  left: 100px;
+}
+
+@keyframes floatClouds {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(120vw);
+  }
+}
