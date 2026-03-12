@@ -5,14 +5,15 @@ import NavSublink from "../components/NavSublink";
 const NormalNavigation = () =>{
     return (
         <Box sx={{
-            display: "flex",
+            display: {xs:"none", sm:"flex"},
             flexDirection: "row",
             alignItems: "center",
             justifyContent: "space-around",
-            border: "1px red solid",
+            backgroundColor: "#fafafa",
             width : "40rem",
             padding: "0.3rem",
             borderRadius: "5rem",
+            zIndex: 10,
         }}>
             <NavButton title="Home" link="/"/>
             <NavButton title="Project" link="#">

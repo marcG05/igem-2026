@@ -6,12 +6,14 @@ const LogoContainer =  () => {
         display: { xs :"none", md : "flex"},
         flexDirection: "row",
         width: "15.5rem",
-        border: "1px red solid",
         borderRadius: "5rem",
+        paddingRight: "10px",
         left: 0,
         top: 0,
         justifyContent: "center",
+        backgroundColor: "#fafafa",
         alignItems: "center",
+        zIndex: 10,
     }}>
         <img  style={{
            maxWidth: "50%", 

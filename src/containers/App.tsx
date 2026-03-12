@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import { NotFound } from "../components/NotFound.js";
 import { Attributions } from "../contents/index.js";
 import { Home } from "../contents/index.js";
+import NavigationBar from "../components/navigations/NavigationBar.js";
 
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
 
   return (
     <>
+    <NavigationBar />
       {/* Routes */}
         <Routes>
           <Route path="*" element={<NotFound />} />

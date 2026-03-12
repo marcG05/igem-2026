@@ -10,7 +10,6 @@ const NavSublink = ({title, link} : {title:string, link:string}) => {
             }
         } sx={{
             padding: "1rem",
-            backgroundColor: "white",
             cursor: "pointer",
             width: "100%",
             ":hover" : {

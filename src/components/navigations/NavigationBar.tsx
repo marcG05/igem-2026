@@ -15,7 +15,8 @@ const NavigationBar = () =>{
             marginTop: "5px",
             userSelect: "none",
             boxSizing: "border-box",
-            border: "1px blue solid",
+            position: "fixed",
+            zIndex: 100
         }}>
         <LogoContainer />
         <NormalNavigation />
