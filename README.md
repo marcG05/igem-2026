@@ -1,4 +1,4 @@
-# Team USherbrooke 2025 Wiki
+# Team USherbrooke 2026 Wiki
 
 This repository uses `TypeScript` and `React` to manage the wikis.
 
@@ -8,6 +8,10 @@ This repository **MUST** contain all coding assets to generate your team's wiki
 Images, photos, icons and fonts **MUST** be stored on `static.igem.wiki` using
 [tools.igem.org](https://tools.igem.org), and Videos **must** be embedded
 from [iGEM Video Universe](https://video.igem.org).
+
+# FOR NOW: 
+Use the tmp folder for image.
+
 
 For up-to-date requirements, resources, help and guidance, visit
 [competition.igem.org/deliverables/team-wiki](https://competition.igem.org/deliverables/team-wiki).

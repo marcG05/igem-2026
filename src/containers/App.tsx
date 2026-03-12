@@ -5,6 +5,7 @@ import { getPathMapping, stringToSlug } from "../utils/index.js";
 import { useEffect } from "react";
 import { NotFound } from "../components/NotFound.js";
 import { Attributions } from "../contents/index.js";
+import { Home } from "../contents/index.js";
 
 
 const App = () => {
@@ -26,6 +27,7 @@ const App = () => {
       {/* Routes */}
         <Routes>
           <Route path="*" element={<NotFound />} />
+          <Route path="/" element={<Home />} />
           <Route path="/attributions" element={<Attributions />} />
         </Routes>
     </>
