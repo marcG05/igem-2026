@@ -29,7 +29,7 @@ const NavButton = ({title, link, children} : {title:string, link:string, childre
                 backgroundColor: titleClick && children ? "#fafafa" : "transparent",
                 borderRadius: titleClick && children ? "1rem" : "0",
                 boxShadow: titleClick && children ? "10px 5px 5px #f0f0f0" : "none",
-                transition: "all 0.4s ease-out",
+                transition: "all 0.3s ease-out",
                 ":hover": {
                     backgroundColor: "white",
                     borderRadius: "1rem",
@@ -56,6 +56,7 @@ const NavButton = ({title, link, children} : {title:string, link:string, childre
                 visibility: "hidden",
                 zIndex: 100,
                 width: "10rem",
+                borderRadius: "5px",
                 boxShadow: "10px 5px 5px #41414146",
                 backgroundColor: "#fafafa",
                 gap: "1rem"

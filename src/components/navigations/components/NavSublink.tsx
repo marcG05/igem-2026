@@ -12,6 +12,7 @@ const NavSublink = ({title, link} : {title:string, link:string}) => {
             padding: "1rem",
             cursor: "pointer",
             width: "100%",
+            borderRadius: "5px",
             ":hover" : {
                 backgroundColor: "#d6d6d6",
                 transition: "all 1s ease-out",
