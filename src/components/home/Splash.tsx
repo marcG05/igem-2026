@@ -57,7 +57,7 @@ const Splash = () => {
                 top: 0,
                 left: 0,
                 opacity: 0
-            }} src={`${import.meta.env.BASE_URL}tmp/bg.png`} />
+            }} src={`${import.meta.env.BASE_URL}tmp/bg.jpg`} />
 
             <div ref={titleRef} style={{
                 zIndex: 10
