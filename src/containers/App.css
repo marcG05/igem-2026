@@ -1,6 +1,16 @@
+html {
+  scroll-behavior: smooth;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100%;
+}
+
 body {
   /*padding-top: 56px;*/
   overflow-x: hidden;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100%;
 }
 
 .left-aligned {

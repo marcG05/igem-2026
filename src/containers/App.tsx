@@ -7,13 +7,13 @@ import { NotFound } from "../components/NotFound.js";
 import { Attributions } from "../contents/index.js";
 import { Home } from "../contents/index.js";
 import NavigationBar from "../components/navigations/NavigationBar.js";
-
+import Footer from "../components/Footer.js";
 
 const App = () => {
   const pathMapping = getPathMapping();
   const currentPath =
     location.pathname
-      .split(`${stringToSlug(import.meta.env.VITE_TEAM_NAME)}`) 
+      .split(`${stringToSlug(import.meta.env.VITE_TEAM_NAME)}`)
       .pop() || "/";
 
   const title =
@@ -25,13 +25,14 @@ const App = () => {
 
   return (
     <>
-    <NavigationBar />
+      <NavigationBar />
       {/* Routes */}
-        <Routes>
-          <Route path="*" element={<NotFound />} />
-          <Route path="/" element={<Home />} />
-          <Route path="/attributions" element={<Attributions />} />
-        </Routes>
+      <Routes>
+        <Route path="*" element={<NotFound />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/attributions" element={<Attributions />} />
+      </Routes>
+      <Footer />
     </>
   );
 };

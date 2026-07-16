@@ -1,7 +1,4 @@
-import {
-  Attributions,
-  Home,
-} from "./contents/index";
+import { Attributions, Home } from "./contents/index";
 
 interface Base {
   name: string | undefined;

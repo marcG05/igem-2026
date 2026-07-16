@@ -4,7 +4,7 @@ export function Attributions() {
   const teamID = import.meta.env.VITE_TEAM_ID;
 
   return (
-    <Box component={"div"} sx={{height:"400vh", padding:5, mb:10, mt:10}}>
+    <Box component={"div"} sx={{ height: "400vh", padding: 5, mb: 10, mt: 10 }}>
       {/*
         ======================================================================
         == VERY IMPORTANT                                                   ==
@@ -14,9 +14,9 @@ export function Attributions() {
         NOT MEETING BRONZE MEDAL CRITERION #2
       */}
 
-      <div className="row mt-4" style={{height:"100%"}}>
+      <div className="row mt-4" style={{ height: "100%" }}>
         <iframe
-          style={{ width: "100%", height:"100%" }}
+          style={{ width: "100%", height: "100%" }}
           id="igem-attribution-form"
           src={`https://teams.igem.org/wiki/${teamID}/attributions`}
         />
