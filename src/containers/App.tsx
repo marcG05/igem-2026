@@ -8,6 +8,7 @@ import { Attributions } from "../contents/index.js";
 import { Home } from "../contents/index.js";
 import NavigationBar from "../components/navigations/NavigationBar.js";
 import Footer from "../components/Footer.js";
+import DryLab from "../contents/Lab/DryLab.js";
 
 const App = () => {
   const pathMapping = getPathMapping();
@@ -31,6 +32,7 @@ const App = () => {
         <Route path="*" element={<NotFound />} />
         <Route path="/" element={<Home />} />
         <Route path="/attributions" element={<Attributions />} />
+        <Route path="/dry-lab" element={<DryLab />} />
       </Routes>
       <Footer />
     </>
